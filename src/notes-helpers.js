@@ -3,7 +3,7 @@ export const findFolder = (folders=[], folderid) =>
   folders.find(folder => folder.id === folderid)
 
 export const findNote = (notes=[], noteId) =>
-  notes.find(note => note.id === noteId)
+  notes.find(note => note.id == noteId)
 
 export const getNotesForFolder = (notes=[], folderid) => (
   (!folderid)
@@ -12,4 +12,4 @@ export const getNotesForFolder = (notes=[], folderid) => (
 )
 
 export const countNotesForFolder = (notes=[], folderid) =>
-  notes.filter(note => note.folderid === folderid).length
+  notes.filter(note => note.folderid == folderid).length
