@@ -22,6 +22,7 @@ export default class NoteListMain extends React.Component {
     console.log(notes)
     const notesForFolder = getNotesForFolder(notes, folderid)
     console.log(notesForFolder)
+
     return (
       <section className='NoteListMain'>
         <ul>
