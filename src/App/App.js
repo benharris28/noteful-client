@@ -61,8 +61,8 @@ class App extends Component {
 
   handleDeleteNote = noteId => {
     let notesClone = JSON.parse(JSON.stringify(this.state.notes));
-    console.log(notesClone );
-    console.log(notesClone.filter(note => note.id != noteId));
+    
+    
     this.setState({
       notes: notesClone.filter(note => note.id != noteId)
     })
